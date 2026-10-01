@@ -1,21 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Hello World</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>404 Network — Club Not Found</title>
+<link rel="stylesheet" href="stylesheet.css">
+<script src="script.js" defer></script>
 </head>
-
 <body>
-    <h1>Hello, World!</h1>
+<div class="app">
 
-    <p>
-        Welcome to the 404 Network website.
-    </p>
+  <div class="menubar">
+    <div class="brand-mini">
+      <div class="brand-icon">404</div>
+      <span>404 Network</span>
+    </div>
+
+    <a class="menu-item" href="#" data-menu="file">File</a>
+    <a class="menu-item" href="#" data-menu="edit">Edit</a>
+    <a class="menu-item" href="#" data-menu="view">View</a>
+    <a class="menu-item" href="#projects">Project</a>
+    <a class="menu-item" href="#events">Build</a>
+    <a class="menu-item" href="https://github.com/404network-cnf" target="_blank" rel="noopener">Git</a>
+    <a class="menu-item" href="#contact">Tools</a>
+    <a class="menu-item" href="#about">Help</a>
+
+    <div class="menubar-spacer"></div>
+    <div class="window-btns" aria-hidden="true">
+      <span>—</span><span>□</span><span>×</span>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <a class="tool-btn primary" href="#join">
+      <span class="tool-icon">▶</span> Join 404
+    </a>
+    <a class="tool-btn" href="https://github.com/404network-cnf" target="_blank" rel="noopener">
+      <span class="tool-icon">&lt;/&gt;</span> GitHub
+    </a>
+    <div class="divider"></div>
+    <a class="tool-btn" href="#events">
+      <span class="tool-icon">◫</span> Events
+    </a>
+    <a class="tool-btn" href="#projects">
+      <span class="tool-icon">{ }</span> Projects
+    </a>
+    <a class="tool-btn" href="#contact">
+      <span class="tool-icon">@</span> Contact
+    </a>
+    <input class="searchbox" id="siteSearch" placeholder="Search 404 Network (Ctrl+Q)" />
+  </div>
+
+  <div class="workspace">
+    <aside class="explorer">
+      <div class="explorer-title">Solution Explorer</div>
+      <div class="explorer-tree" id="explorerTree"></div>
+    </aside>
+
+    <main class="editor">
+      <div class="tabs" id="tabs">
+        <div class="tab active" data-page="home"><span class="dot"></span> Home.cshtml</div>
+        <div class="tab" data-page="projects"><span class="dot"></span> Projects.cshtml</div>
+        <div class="tab" data-page="events"><span class="dot"></span> Events.cshtml</div>
+        <div class="tab" data-page="about"><span class="dot"></span> About.cshtml</div>
+        <div class="tab" data-page="contact"><span class="dot"></span> Contact.cshtml</div>
+      </div>
+
+      <div class="editor-scroll" id="editorScroll">
+
+        <!-- HOME -->
+        <article class="page active" data-page="home">
+          <div class="content">
+            <section id="home-welcome" data-label="Welcome">
+              <div class="hero">
+                <div>
+                  <div class="eyebrow">club_not_found</div>
+                  <h1>Build. Learn.<br><span class="gradient-text">Connect.</span></h1>
+                  <p>
+                    404 Network is a computer science community built around collaborative projects,
+                    technical growth, career development, and the occasional wonderfully unnecessary
+                    Easter egg.
+                  </p>
+                  <div class="hero-actions">
+                    <a class="btn btn-primary" href="#join">Join the Network</a>
+                    <button class="btn btn-secondary" data-open-page="projects">Explore Projects</button>
+                  </div>
+                </div>
+
+                <div class="terminal-art">
+                  <div class="terminal-top"><span></span><span></span><span></span></div>
+                  <div class="code">
+                    <div><span class="c-violet">namespace</span> <span class="c-blue">Club404</span>;</div>
+                    <br>
+                    <div><span class="c-violet">public class</span> <span class="c-cyan">Network</span></div>
+                    <div>{</div>
+                    <div>&nbsp;&nbsp;<span class="c-violet">public string</span> Name =&gt; <span class="c-magenta">"404 Network"</span>;</div>
+                    <div>&nbsp;&nbsp;<span class="c-violet">public string</span> Status =&gt; <span class="c-magenta">"Club Not Found"</span>;</div>
+                    <div>&nbsp;&nbsp;<span class="c-violet">public bool</span> IsBuilding =&gt; <span class="c-cyan">true</span>;</div>
+                    <div>}</div>
+                    <br>
+                    <div class="c-muted">// No experience required.</div>
+                    <div class="c-muted">// Curiosity strongly recommended.</div>
+                  </div>
+                  <div class="orb"></div>
+                </div>
+              </div>
+            </section>
+
+            <section id="home-pillars" data-label="What We Do">
+              <div class="section-heading">
+                <div>
+                  <div class="mono-label">01 / WHAT_WE_DO</div>
+                  <h2>Built for computer science students.</h2>
+                  <p>Hands-on experience beyond the classroom, with projects and conversations that translate directly into real-world skills.</p>
+                </div>
+              </div>
+
+              <div class="grid">
+                <div class="card">
+                  <div class="card-icon">{ }</div>
+                  <h3>Build Projects</h3>
+                  <p>Work on collaborative software projects that give members practical experience with planning, Git, development, testing, and deployment.</p>
+                </div>
+                <div class="card">
+                  <div class="card-icon">↗</div>
+                  <h3>Grow Professionally</h3>
+                  <p>Meet professionals, discuss the transition from school to industry, and learn about internships, interviews, and career paths.</p>
+                </div>
+                <div class="card">
+                  <div class="card-icon">◎</div>
+                  <h3>Find Your Network</h3>
+                  <p>Connect with students across the CS program, collaborate across skill levels, and make technical work feel a little less isolated.</p>
+                </div>
+              </div>
+            </section>
+
+            <section id="home-now" data-label="Current Focus">
+              <div class="section-heading">
+                <div>
+                  <div class="mono-label">02 / NOW_BUILDING</div>
+                  <h2>Current focus: the club website.</h2>
+                  <p>This prototype itself can become the first major collaborative 404 Network project.</p>
+                </div>
+              </div>
+
+              <div class="code-panel">
+                <div class="code-panel-head">Solution '404Network.Web' — Current Sprint</div>
+                <pre><span class="c-blue">[x]</span> Define visual system
+<span class="c-blue">[x]</span> Prototype Visual Studio-inspired navigation
+<span class="c-cyan">[~]</span> Plan site architecture and member contributions
+<span class="c-muted">[ ]</span> Connect events / announcements
+<span class="c-muted">[ ]</span> Add project showcases
+<span class="c-muted">[ ]</span> Hide at least one unnecessary Easter egg somewhere</pre>
+              </div>
+            </section>
+
+            <section id="join" data-label="Join">
+              <div class="contact-box">
+                <div class="mono-label">03 / JOIN</div>
+                <h2>404: Excuse not found.</h2>
+                <p>You do not need to be an expert developer. If you are interested in computer science, software, technology, or meeting people who build things, there is a place for you here.</p>
+                <a class="btn btn-primary" href="mailto:404network@example.com">Get Involved</a>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!-- PROJECTS -->
+        <article class="page" data-page="projects">
+          <div class="content">
+            <section id="projects-overview" data-label="Overview">
+              <div class="section-heading">
+                <div>
+                  <div class="mono-label">PROJECTS / INDEX</div>
+                  <h2>Project workspace</h2>
+                  <p>Projects are designed to let members contribute at different skill levels while learning how real development teams organize work.</p>
+                </div>
+              </div>
+            </section>
+
+            <section id="projects-website" data-label="Club Website">
+              <div class="card">
+                <div class="card-icon">&lt;/&gt;</div>
+                <h3>404 Network Website</h3>
+                <p>A collaborative club website spanning UX, frontend, backend, content strategy, version control, testing, and deployment.</p>
+              </div>
+            </section>
+
+            <section id="projects-workflow" data-label="Development Workflow">
+              <div class="section-heading">
+                <div>
+                  <div class="mono-label">WORKFLOW</div>
+                  <h2>Work like a small software team.</h2>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="card"><h3>Issues</h3><p>Break features into scoped tasks with clear ownership and acceptance criteria.</p></div>
+                <div class="card"><h3>Branches</h3><p>Build changes independently without disrupting stable work.</p></div>
+                <div class="card"><h3>Pull Requests</h3><p>Review code, discuss implementation choices, and practice collaborative development.</p></div>
+              </div>
+            </section>
+
+            <section id="projects-stack" data-label="Tech Stack">
+              <div class="code-panel">
+                <div class="code-panel-head">project.config</div>
+                <pre>{
+  <span class="c-blue">"frontend"</span>: [<span class="c-magenta">"HTML"</span>, <span class="c-magenta">"CSS"</span>, <span class="c-magenta">"JavaScript"</span>],
+  <span class="c-blue">"collaboration"</span>: [<span class="c-magenta">"Git"</span>, <span class="c-magenta">"GitHub"</span>, <span class="c-magenta">"Code Reviews"</span>],
+  <span class="c-blue">"future"</span>: [<span class="c-magenta">"API"</span>, <span class="c-magenta">"Database"</span>, <span class="c-magenta">"Deployment"</span>]
+}</pre>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!-- EVENTS -->
+        <article class="page" data-page="events">
+          <div class="content">
+            <section id="events-upcoming" data-label="Upcoming">
+              <div class="section-heading">
+                <div>
+                  <div class="mono-label">EVENTS / UPCOMING</div>
+                  <h2>Upcoming meetings</h2>
+                  <p>Prototype event data. These can later be driven by a JSON file, CMS, calendar feed, or database.</p>
+                </div>
+              </div>
+
+              <div class="timeline">
+                <div class="event">
+                  <time>WED · 6:00 PM</time>
+                  <div>
+                    <div class="event-title">Website Project Planning</div>
+                    <div class="event-sub">MAC Hall 113 · Architecture, design, schedule, and Easter eggs.</div>
+                  </div>
+                  <span class="badge">MEETING</span>
+                </div>
+                <div class="event">
+                  <time>OCT 21</time>
+                  <div>
+                    <div class="event-title">Industry Speaker Night</div>
+                    <div class="event-sub">Career discussion focused on joining the workforce after graduation.</div>
+                  </div>
+                  <span class="badge">GUEST</span>
+                </div>
+                <div class="event">
+                  <time>TBD</time>
+                  <div>
+                    <div class="event-title">Project Build Session</div>
+                    <div class="event-sub">Open working session for contributors across all experience levels.</div>
+                  </div>
+                  <span class="badge">BUILD</span>
+                </div>
+              </div>
+            </section>
+
+            <section id="events-format" data-label="Meeting Format">
+              <div class="grid">
+                <div class="card"><h3>01. Announcements</h3><p>Short updates, opportunities, and upcoming club business.</p></div>
+                <div class="card"><h3>02. Main Topic</h3><p>Guest speaker, technical discussion, planning session, workshop, or demo.</p></div>
+                <div class="card"><h3>03. Open Build</h3><p>Time for networking, questions, collaboration, and project work.</p></div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!-- ABOUT -->
+        <article class="page" data-page="about">
+          <div class="content">
+            <section id="about-mission" data-label="Mission">
+              <div class="section-heading">
+                <div>
+                  <div class="mono-label">ABOUT / README</div>
+                  <h2>More than another CS meeting.</h2>
+                  <p>404 Network exists to connect students through collaborative technical work, peer learning, professional development, and a shared interest in computing.</p>
+                </div>
+              </div>
+            </section>
+
+            <section id="about-values" data-label="Values">
+              <div class="grid">
+                <div class="card"><div class="card-icon">+</div><h3>Accessible</h3><p>Members can contribute whether they are writing their first program or shipping their tenth project.</p></div>
+                <div class="card"><div class="card-icon">↺</div><h3>Collaborative</h3><p>We learn through iteration, discussion, code review, and shared ownership.</p></div>
+                <div class="card"><div class="card-icon">_</div><h3>Curious</h3><p>We make room for experimentation, side quests, and the occasional deeply unnecessary technical rabbit hole.</p></div>
+              </div>
+            </section>
+
+            <section id="about-team" data-label="Leadership">
+              <div class="section-heading">
+                <div>
+                  <div class="mono-label">TEAM</div>
+                  <h2>Leadership</h2>
+                </div>
+              </div>
+              <div class="team-grid">
+                <div class="person"><div class="avatar">P</div><strong>President</strong><span>Club Leadership</span></div>
+                <div class="person"><div class="avatar">VP</div><strong>Vice President</strong><span>Club Leadership</span></div>
+                <div class="person"><div class="avatar">S</div><strong>Secretary</strong><span>Club Leadership</span></div>
+                <div class="person"><div class="avatar">T</div><strong>Treasurer</strong><span>Club Leadership</span></div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!-- CONTACT -->
+        <article class="page" data-page="contact">
+          <div class="content">
+            <section id="contact-links" data-label="Links">
+              <div class="section-heading">
+                <div>
+                  <div class="mono-label">CONTACT / CONNECT</div>
+                  <h2>Connect with 404 Network.</h2>
+                  <p>Keep the primary pathways simple: meetings, GitHub, club contact, and campus organization resources.</p>
+                </div>
+              </div>
+
+              <div class="contact-panel">
+                <div class="contact-box">
+                  <h3>GitHub Organization</h3>
+                  <p>Browse repositories, project work, issues, and ongoing contributions.</p>
+                  <a class="btn btn-secondary" href="https://github.com/404network-cnf" target="_blank" rel="noopener">Open GitHub</a>
+                </div>
+                <div class="contact-box">
+                  <h3>Attend a Meeting</h3>
+                  <p>Join us on campus for project work, technical sessions, networking, and guest speakers.</p>
+                  <button class="btn btn-primary" data-open-page="events">View Events</button>
+                </div>
+              </div>
+            </section>
+
+            <section id="contact-terminal" data-label="Contact Info">
+              <div class="code-panel">
+                <div class="code-panel-head">contact.json</div>
+                <pre>{
+  <span class="c-blue">"organization"</span>: <span class="c-magenta">"404 Network — Club Not Found"</span>,
+  <span class="c-blue">"campus"</span>: <span class="c-magenta">"UW–Green Bay"</span>,
+  <span class="c-blue">"github"</span>: <span class="c-magenta">"github.com/404network-cnf"</span>,
+  <span class="c-blue">"status"</span>: <span class="c-cyan">"accepting_new_members"</span>
+}</pre>
+              </div>
+            </section>
+          </div>
+        </article>
+
+      </div>
+    </main>
+  </div>
+
+  <div class="statusbar">
+    <span>◉ 404 Network</span>
+    <span>main*</span>
+    <span>✓ Ready</span>
+    <div class="status-right">
+      <span>UTF-8</span>
+      <span>Spaces: 4</span>
+      <span>{ } Club Not Found</span>
+    </div>
+  </div>
+
+</div>
+
 </body>
 </html>
